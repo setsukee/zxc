@@ -5,80 +5,111 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:практика_изотов"
         mc:Ignorable="d"
-        Title="MainWindow" Height="1080" Width="1920">
+        Title="MainWindow" Height="auto" Width="auto">
     <ScrollViewer Name="scroll" CanContentScroll="true" >
-        <Grid>
+        <Grid Height="4819">
             <Grid.RowDefinitions >
-                <RowDefinition></RowDefinition>
-                <RowDefinition></RowDefinition>
-                <RowDefinition></RowDefinition>
-                <RowDefinition></RowDefinition>
-                <RowDefinition></RowDefinition>
-                <RowDefinition></RowDefinition>
-                <RowDefinition></RowDefinition>
-                <RowDefinition></RowDefinition>
-                <RowDefinition></RowDefinition>
-                <RowDefinition></RowDefinition>
-                <RowDefinition></RowDefinition>
-                <RowDefinition></RowDefinition>
-                <RowDefinition></RowDefinition>
+                <RowDefinition Height="auto"></RowDefinition>
+                <RowDefinition Height="auto"></RowDefinition>
+                <RowDefinition Height="auto"></RowDefinition>
+                <RowDefinition Height="auto"></RowDefinition>
+                <RowDefinition Height="auto"></RowDefinition>
+                
             </Grid.RowDefinitions>
 
             <Grid.ColumnDefinitions>
-                <ColumnDefinition ></ColumnDefinition>
-                <ColumnDefinition></ColumnDefinition>
-                <ColumnDefinition></ColumnDefinition>
-                <ColumnDefinition></ColumnDefinition>
-                <ColumnDefinition></ColumnDefinition>
-                <ColumnDefinition></ColumnDefinition>
-                <ColumnDefinition></ColumnDefinition>
-                <ColumnDefinition></ColumnDefinition>
-                <ColumnDefinition></ColumnDefinition>
-                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition Width="auto"></ColumnDefinition>
+                <ColumnDefinition Width="auto"></ColumnDefinition>
+                <ColumnDefinition Width="auto"></ColumnDefinition>
+                <ColumnDefinition Width="auto"></ColumnDefinition>
+                <ColumnDefinition Width="Auto"></ColumnDefinition>
+               
 
             </Grid.ColumnDefinitions>
+            
             <Image  Grid.Column="0"   
                     Grid.Row="0"
-                Grid.RowSpan="4"
-                Grid.ColumnSpan="10"
-                Source="/Resources/header.jpg"
-                    />
-            
-            <Image   
-                Grid.Column="1"
-                Height="400"
-                Width="400"
-                    Grid.Row="3"
-                Grid.RowSpan="4"
-                Grid.ColumnSpan="3"
-                Source="/Resources/table-1.jpg" />
-
-            <Image   
-                Grid.Column="3"
-                Height="400"
-                Width="400"
-                    Grid.Row="3"
-                Grid.RowSpan="3"
-                Grid.ColumnSpan="4"
-                Source="/Resources/table-2.jpg" 
-                />
-
-            <Image   
-                Grid.Column="6"
-                Height="400"
-                Width="400"
-                    Grid.Row="3"
-                Grid.RowSpan="3"
-                Grid.ColumnSpan="3"
-                Source="/Resources/table-3.jpg" Margin="116,131,55,31" />
-
-            <Image  Grid.Column="2"   
-                    Grid.Row="0"
-                    Height="40"
-                Grid.RowSpan="1"
-                Grid.ColumnSpan="1"
-                Source="/Resources/logo.png">
+                   Stretch="UniformToFill"
+                Grid.RowSpan="2"
+                Grid.ColumnSpan="5"
+                Source="/Resources/header.jpg" >
             </Image>
+
+            <Image   
+            Grid.Column="1"
+                Grid.Row="1"
+                Height="500"
+                Width="450"
+                VerticalAlignment="Bottom"
+                Source="/Resources/table-1.jpg" >
+            </Image> 
+
+            <Image   
+            Grid.Column="2"
+                Grid.Row="1"
+                VerticalAlignment="Bottom"
+                Height="500"
+                Width="450"
+                Source="/Resources/table-2.jpg" >
+            </Image>
+
+            <Image   
+               Grid.Column="3"
+                Grid.Row="1"
+                Width="450"
+                VerticalAlignment="Bottom"
+                Source="/Resources/table-3.jpg"  >
+            </Image>
+            <Border
+                Grid.Row="0"
+                Grid.Column="0"
+                Grid.ColumnSpan="1"
+                Grid.RowSpan="1">
+                <Image  Grid.Column="2"   
+                    Grid.Row="1"
+                    Height="50"
+                Grid.RowSpan="2"
+                Grid.ColumnSpan="2"
+                        HorizontalAlignment="Right"
+                Source="/Resources/logo.png">
+
+
+                </Image>
+            </Border>
+            <StackPanel
+                Grid.Row="1"
+                Grid.Column="0"
+                Grid.ColumnSpan="5">
+                <TextBlock
+                Text="Take care of your body"
+                FontSize="40"
+                Foreground="white"
+                Grid.Column="2"
+                Grid.Row="1"
+                    HorizontalAlignment="Center"
+                VerticalAlignment="Bottom"
+                Grid.ColumnSpan="5">
+
+                </TextBlock>
+                <TextBlock
+                Text="It's the only palace you have to live."
+                Foreground="White"
+                FontSize="60"
+                Grid.Column="0"
+                Grid.Row="2"
+                Grid.ColumnSpan="5"
+                VerticalAlignment="Top"
+                HorizontalAlignment="Center"/>
+            </StackPanel>
+            
+                
+
+
+            <Button x:Name="button5" Content="Team" FontSize="20" Foreground="white" HorizontalAlignment="Left" Width="100" Height="50" BorderBrush="Transparent" Background="Transparent" Grid.Column="3" />
+            <Button x:Name="button4" Content="Intro" FontSize="20" Foreground="white" Width="100" Height="50" HorizontalAlignment="Center" BorderBrush="Transparent" Background="Transparent" Grid.Column="2" />
+            <Button x:Name="button3" Content="Services" FontSize="20" Foreground="white" Width="150" Height="50" HorizontalAlignment="Right" BorderBrush="Transparent" Background="Transparent" Grid.Column="2" />
+            <Button x:Name="button2" Content="Pricing" FontSize="20" Foreground="white" Width="100" Height="50" BorderBrush="Transparent" HorizontalAlignment="Center" Background="Transparent" Grid.Column="3" />
+                <Button x:Name="button1" Content="Sign Up" FontSize="20" Foreground="white" Width="150" Height="70" HorizontalAlignment="right" Background="#0080FF" Grid.Column="3"/>
         </Grid>
     </ScrollViewer>
 </Window>
